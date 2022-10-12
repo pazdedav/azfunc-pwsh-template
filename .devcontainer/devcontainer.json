@@ -16,21 +16,25 @@
 		// Configure properties specific to VS Code.
 		"vscode": {
 			// Set *default* container specific settings.json values on container create.
-			"settings": { 
+			"settings": {
 				"terminal.integrated.defaultProfile.linux": "pwsh"
 			},
-			
+
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"ms-azuretools.vscode-azurefunctions",
-				"ms-vscode.powershell"
+				"ms-vscode.powershell",
+				"GitHub.vscode-pull-request-github",
+				"ms-azuretools.vscode-bicep",
+				"ms-vscode.azure-account",
+				"ms-azuretools.vscode-azureresourcegroups"
 			]
 		}
 	},
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "dotnet restore",
-	
+
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode"
 }
