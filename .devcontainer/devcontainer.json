@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.245.2/containers/azure-functions-pwsh
 {
-	"name": "Azure Functions & PowerShell",
+	"name": "AzFunc PoSH Dev Environment",
 	"build": {
 		"dockerfile": "Dockerfile",
 		"args": {
@@ -27,7 +27,8 @@
 				"GitHub.vscode-pull-request-github",
 				"ms-azuretools.vscode-bicep",
 				"ms-vscode.azure-account",
-				"ms-azuretools.vscode-azureresourcegroups"
+				"ms-azuretools.vscode-azureresourcegroups",
+				"msazurermtools.azurerm-vscode-tools"
 			]
 		}
 	},
@@ -36,5 +37,8 @@
 	// "postCreateCommand": "dotnet restore",
 
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-	"remoteUser": "vscode"
+	"remoteUser": "vscode",
+	"features": {
+		"azure-cli": "latest"
+	}
 }
